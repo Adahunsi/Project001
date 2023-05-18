@@ -421,7 +421,7 @@ a{
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
-  max-width: 708px;
+  max-width: 1140px;
   font-weight: bold;
 }
 .img-feat{
@@ -577,7 +577,13 @@ a{
   .img{
     max-width: 255px;
   }
-  
+  .box-ft{
+    align-items: center !important;
+    flex-direction: column;
+  }
+  .ftbWidth{
+    height: 348px !important;
+  }
 }
 @media only screen and (max-width: 992px) {
   .img-feat{
@@ -619,6 +625,9 @@ a{
   .imgoneimg{
     width: 100%;
   }
+  .ftbWidth{
+    height: 215px !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .img-feat{
@@ -657,10 +666,18 @@ a{
     max-width: 350px;
     margin-bottom: 20px; 
   }
+  .ftbWidth{
+    height: 238px !important;
+  }
 } 
+@media only screen and (max-width: 420px) {
+  .ftbWidth{
+    height: 287px !important;
+  }
+}
 @media only screen and (max-width: 280px) {
 .ft-text{
-  max-width: 272px;
+  max-width: 248px;
 }
 .ab-ft{
   max-width: 278px;
@@ -673,7 +690,10 @@ a{
   padding-right: 15px;
 }
 .featImgOne{
-  max-width: 260px;
+  max-width: 238px;
+}
+.ftbWidth{
+  height: 374px !important;
 }
 }
 
@@ -713,6 +733,9 @@ a{
 }
 .feat-box:hover{
   transform: scale(1.09);
+}
+.ftbWidth{
+  height: 329px;
 }
 .right{
   margin-right: 3rem;
@@ -1557,7 +1580,122 @@ a{
 
 
 
+/* Why Nano */
+.NanoSec{
+  padding-top: 64px;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.whyNano{
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  max-width: 1140px;
+  padding:0 16px;
+}
+.nano-text{
+  text-align: left;
+  color: #6c758f;
+  margin: 0 auto 60px;
+  color: #6c758f;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  max-width: 1140px;
+  font-weight: bold;
+}
+.nanoWhys{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.nanoLink{
+  text-decoration: underline;
+}
+.nanoWhy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  margin: 0 20px;
+  height: 400px;
+  flex-direction: column;
+  width: 25%;
+  transition: transform .7s;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+}
 
+.up{
+  margin-bottom: 70px !important;
+}
+.nano-p{
+  color: #6c758f;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding: 9px;
+}
+.nanoWhy:hover{
+  transform: scale(1.06);
+}
+.nanoWhy{
+  &:hover{
+    .add-sp{
+      -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+      transform: rotateZ(360deg);
+  }
+
+  .app-head{
+    font-weight: bold;
+    color: #eda85e;
+  }
+  }
+}
+.addN{
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px){
+  .whyNano{
+    max-width: 960px;
+  }
+  .whyHead{
+  padding: 0 15px;
+}
+  .nanoWhys{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nanoWhy{
+    width: 40%;
+    margin-bottom: 70px !important;
+  }
+  .up{
+    margin-bottom: 0 !important;
+  }
+  .nano-p{
+  padding: 13px;
+}
+
+}
+
+@media only screen and (max-width: 992px){
+  .whyNano{
+    max-width: 720px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .whyNano{
+    max-width: 540px;
+  }
+  .nanoWhy, .up{
+    width: 100%;
+    margin-bottom: 40px !important;
+  }
+
+}
 
 /* Prices */
 .addSec{
@@ -2662,6 +2800,39 @@ iframe{
   }
   .user-text{
     width: 333px;
+  }
+  .rev-header{
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+  }
+
+  @media only screen and (max-width: 390px){
+    .carousel,.user-review{
+      width: 380px;
+    }
+    .u-text{
+      width: 237px;
+      margin: 0 auto;
+    }
+    .next-btn{
+      position: absolute;
+      top: 50%;
+      left: 80%;
+    }
+    .prev-btn{
+      position: absolute;
+      top: 50%;
+      right: 80%;
+  }
+  .slider{
+    width: 363px;
+  }
+  .carousel-container{
+    max-width: 363px;
+  }
+  .user-text{
+    width: 318px;
   }
   .rev-header{
     font-size: 2.8rem;
